@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #7bdaf3;
+    padding-top: 5rem;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    font-family: sans-serif;
+    justify-content: center;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.add {
+    background-color: rgb(157, 200, 98);
+    border-radius: 3px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.add:hover {
+    color: #000;
+}
+.note {
+    background-color: #fff;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+}
+.note .tools {
+    background-color: #9ec862;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.note .tools button {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.note .main {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    background: #eee;
+}
+.note textarea {
+    font-size: 1.2rem;
+    outline: none;
+    font-family: inherit;
+    border: none;
+    height: 400px;
+    width: 100%;
+    resize: none;
+}
+.note .hidden {
+    display: none;
+}
+.contact {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: rgb(136, 196, 52);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: .4s;
+}
+.contact:hover {
+    background-color: rgb(136, 196, 52);
+    box-shadow: 0 0 8px 1px #000;
+    color: #000;
+    font-weight: lighter;
+}
+.contact-me {
+    position: fixed;
+    bottom: -20rem;
+    right: 2rem;
+    padding: 1rem;
+    background: rgba(157, 200, 98, 0.938);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+.opened {
+    bottom: 2rem !important;
+}
+.hidden {
+    display: none;
+}
+.close {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+.contact-link:not(.close) {
+    color: #fff;
+    padding: .5rem 1rem;
+}
+.contact-link a {
+    text-decoration: none;
+    color: #0000ee;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-link a:hover {
+    color: #000;
+}
+.contact-link i {
+    padding-right: .5rem;
+}
+.phone p {
+    padding-left: 0.5rem;
+}
+.instagram p {
+    padding-left: 0.2rem;
+}
